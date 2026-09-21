@@ -156,6 +156,9 @@ input[type="text"] {
 
 .content__list-container {
     position: relative;
+    height: 298px;
+    overflow: auto;
+    overflow-x: hidden;
 }
 
 .title {
@@ -208,12 +211,6 @@ input[type="text"] {
     line-height: 16.2px;
     line-clamp: 1;
     overflow: hidden;
-}
-
-.content__list-container {
-    height: 298px;
-    overflow: auto;
-    overflow-x: hidden;
 }
 
 .content__list {
