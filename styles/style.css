@@ -18,7 +18,7 @@ html {
     background-color: #1b1919;
     display: flex;
     align-items: center;
-    padding-left: 30px;
+    justify-content: center;
 }
 
 h1,
@@ -75,7 +75,6 @@ ol {
 .content {
     display: flex;
     align-items: flex-end;
-    height: 456px;
 }
 
 video.result__video {
@@ -122,6 +121,7 @@ input[type="text"] {
     height: 19px;
     border: 1px solid #fff;
     cursor: pointer;
+    padding: 1px;
 }
 
 .search-form__pseudo-checkbox::after {
@@ -133,19 +133,12 @@ input[type="text"] {
     opacity: 0;
 }
 
-.search-form__fieldset:has(.search-form__label:hover)
-    .search-form__fieldset-title {
+.search-form__label:hover .search-form__label-text {
     text-decoration: underline;
 }
 
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
     opacity: 1;
-}
-
-.search-form__label:hover
-    .search-form__pseudo-checkbox
-    + .search-form__label-text {
-    text-decoration: underline;
 }
 
 .search-form__fieldset-title {
@@ -228,6 +221,7 @@ input[type="text"] {
 }
 
 .content__video-card {
+    height: 103px;
     display: flex;
     justify-content: space-between;
 }
